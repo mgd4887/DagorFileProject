@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="51345a6f-9be6-46f6-a849-c3f2d37f05aa" name="Default Changelist" comment="" />
+    <list default="true" id="51345a6f-9be6-46f6-a849-c3f2d37f05aa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/DagorElement/Native/NativeFileTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DagorElement/DagorElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DagorElement/DagorElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DagorElement/DagorObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DagorElement/DagorObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DagorElement/DagorValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DagorElement/DagorValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DagorElement/Native/DagorObjectNative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DagorElement/Native/DagorObjectNative.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,42 +30,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java">
+        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+            <state relative-caret-position="221">
+              <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2226#2227#0" expanded="true" />
-                <element signature="e#2278#2279#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/BlockComment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorElement.java">
+        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+            <state relative-caret-position="59">
+              <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+                <element signature="e#476#477#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorValue.java">
+        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/TopLevelObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
+            <state relative-caret-position="909">
+              <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -65,10 +68,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java">
+        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="187">
+              <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -79,12 +82,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorObjectNative.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="238">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#260#261#0" expanded="true" />
-                <element signature="e#297#298#0" expanded="true" />
+                <element signature="e#464#465#0" expanded="true" />
+                <element signature="e#491#492#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,8 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DagorElement/RegexTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -103,10 +106,22 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/java/DagorElement/Native/DagorValueNativeTest.java">
+        <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/NativeFileTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="78" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="5" selection-start-column="5" selection-end-column="5" />
+              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,11 +129,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorObject.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
             </state>
           </provider>
         </entry>
@@ -140,13 +152,15 @@
       <find>paresValues</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HierarchyBrowserManager">
     <option name="SCOPE" value="All" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/DagorBuilderState/String.java" />
         <option value="$PROJECT_DIR$/src/DagorBuilderState/InString.java" />
         <option value="$PROJECT_DIR$/src/DagorBuilderState/Comment.java" />
         <option value="$PROJECT_DIR$/src/DagorBuilderState/SubObject.java" />
@@ -183,34 +197,37 @@
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder/DagorBuilderState/TopLevelObject.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder/DagorBuilderState/SubObject.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder/DagorNativeObjectBuilder.java" />
-        <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorObjectNative.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder/DagorFile.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/DagorFile.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObject.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObjectBlockComment.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObjectInlineComment.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObjectInString.java" />
-        <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java" />
-        <option value="$PROJECT_DIR$/src/DagorElement/DagorObject.java" />
         <option value="$PROJECT_DIR$/test/java/DagorElement/Native/DagorValueNativeTest.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/RegexTest.java" />
-        <option value="$PROJECT_DIR$/src/DagorElement/DagorValue.java" />
-        <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java" />
         <option value="$PROJECT_DIR$/src/DagorElement/DagorElement.java" />
+        <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java" />
+        <option value="$PROJECT_DIR$/src/DagorElement/DagorObject.java" />
+        <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java" />
+        <option value="$PROJECT_DIR$/src/DagorElement/DagorValue.java" />
+        <option value="$PROJECT_DIR$/src/DagorElement/Native/DagorObjectNative.java" />
+        <option value="$PROJECT_DIR$/src/DagorElement/Native/NativeFileTest.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-70" />
-    <option name="y" value="-14" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
     <option name="width" value="1936" />
     <option name="height" value="1056" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -259,7 +276,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -270,7 +286,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553486695230" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554611782450" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -283,6 +299,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -410,7 +427,14 @@
       <workItem from="1551454567327" duration="660000" />
       <workItem from="1551481746530" duration="599000" />
       <workItem from="1551543514027" duration="8000" />
-      <workItem from="1553469287990" duration="12339000" />
+      <workItem from="1553469287990" duration="16102000" />
+      <workItem from="1553519257052" duration="1751000" />
+      <workItem from="1553606244722" duration="632000" />
+      <workItem from="1553735406751" duration="1325000" />
+      <workItem from="1553807065948" duration="840000" />
+      <workItem from="1554088740501" duration="673000" />
+      <workItem from="1554585087796" duration="618000" />
+      <workItem from="1554585912922" duration="6672000" />
     </task>
     <servers />
   </component>
@@ -438,23 +462,24 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115011000" />
+    <option name="totallyTimeSpent" value="131285000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17643923" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18923241" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Statistic" weight="0.32936078" />
       <window_info anchor="bottom" id="Duplicate detector" order="0" weight="0.32936078" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" />
-      <window_info active="true" anchor="bottom" id="Run" order="3" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -462,7 +487,7 @@
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.0791757" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Inspection Results" order="14" weight="0.32936078" />
@@ -565,17 +590,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObjectInlineComment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObjectBlockComment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="28" column="22" selection-start-line="28" selection-start-column="22" selection-end-line="28" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/java/DagorElement/Native/DagorValueNativeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="14" column="66" lean-forward="true" selection-start-line="14" selection-start-column="66" selection-end-line="14" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/BlockComment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -586,20 +618,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObject.java">
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObjectInlineComment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-536">
-          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="476">
+          <caret line="28" column="23" lean-forward="true" selection-start-line="28" selection-start-column="23" selection-end-line="28" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/TopLevelObject.java">
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorValue.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="70" column="29" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="9" column="38" lean-forward="true" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -613,29 +642,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java">
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/TopLevelObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="49" selection-start-line="21" selection-start-column="49" selection-end-line="21" selection-end-column="49" />
+        <state relative-caret-position="909">
+          <caret line="72" column="26" lean-forward="true" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2226#2227#0" expanded="true" />
-            <element signature="e#2278#2279#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/BlockComment.java">
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="42" selection-start-line="20" selection-start-column="42" selection-end-line="20" selection-end-column="42" />
+        <state relative-caret-position="221">
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorObjectNative.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#464#465#0" expanded="true" />
+            <element signature="e#491#492#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorObject.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="221">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorBuilderState/SubObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="50" column="45" lean-forward="true" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -644,57 +703,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/DagorElement/RegexTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/java/DagorElement/Native/DagorValueNativeTest.java">
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/NativeFileTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="85">
+          <caret line="5" column="78" selection-start-line="5" selection-start-column="78" selection-end-line="5" selection-end-column="78" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorObjectNative.java">
+    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorNativeObjectBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        <state relative-caret-position="59">
+          <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#260#261#0" expanded="true" />
-            <element signature="e#297#298#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+            <element signature="e#476#477#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/Native/DagorValueNative.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DagorElement/DagorElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="35" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
         </state>
       </provider>
     </entry>

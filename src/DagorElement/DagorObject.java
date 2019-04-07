@@ -1,21 +1,13 @@
 package DagorElement;
 
-import DagorElement.DagorElement;
-import DagorElement.DagorValue;
+import java.util.Collection;
 
-import java.util.ArrayList;
+public abstract class DagorObject extends DagorElement {
 
-public class DagorObject extends DagorElement {
-    private String name;
-    private ArrayList<DagorElement> elements;
 
-    protected DagorObject(String name, ArrayList<DagorElement> elements) {
-        this.name = name;
-        this.elements = elements;
+    protected DagorObject() {
     }
 
     @Override
-    public void addElement(DagorElement element) {
-
-    }
+    public abstract Collection <DagorElement> getElements();
 }

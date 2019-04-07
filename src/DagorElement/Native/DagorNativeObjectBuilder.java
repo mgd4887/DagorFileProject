@@ -19,30 +19,7 @@ public class DagorNativeObjectBuilder {
 
 
     public void addElement(DagorElement element) {
-        if (elementsContains(element.getName())){
-            elementsGet(element.getName()).addElement(element);
-        }else{
-            elements.add(element);
-        }
-
-    }
-
-    private boolean elementsContains(String name) {
-        for (DagorElement element: elements) {
-            if (element.getName().equals(name)){
-                return true;
-            }
-        }
-        return false;
-    }
-
-    private DagorElement elementsGet(String name) {
-        for (DagorElement element: elements) {
-            if (element.getName().equals(name)){
-                return element;
-            }
-        }
-        return null;
+        elements.add(element);
     }
 
 

@@ -3,21 +3,17 @@ package DagorElement;
 import DagorElement.DagorElement;
 
 import java.util.ArrayList;
+import java.util.Collection;
 
 public abstract class DagorValue extends DagorElement {
 
-    protected ValueType valueType;
-    protected String value;
-    protected ArrayList <String> values;
-    protected String name;
+    public abstract String getValue();
 
     protected enum ValueType {
         REAL, INT, BOOL, P4, P3, P2, COLOR, M, STRING, ERROR
     }
-    public DagorValue(String value, String name) {
-        this.value = value;
-        this.name = name;
 
+    protected DagorValue() {
     }
 
     protected ValueType valueTypeStringToEnum(String valueType){

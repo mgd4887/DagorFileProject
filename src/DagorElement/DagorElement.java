@@ -1,15 +1,16 @@
 package DagorElement;
 
 import java.io.BufferedWriter;
+import java.util.Collection;
 
 public abstract class DagorElement {
-    private String name;
+    protected String name;
 
     public String getName(){
         return this.name;
     }
 
-    public abstract void addElement(DagorElement element);
+    public abstract Collection<DagorElement> getElements();
 
     /*
     public abstract void compare(BufferedWriter writer);
