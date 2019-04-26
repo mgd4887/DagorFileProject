@@ -1,12 +1,14 @@
 package DagorElement;
 
-import DagorElement.DagorElement;
-import DagorElement.DagorObject;
-
-import java.util.ArrayList;
+import java.util.Collection;
 
 public class DagorFile extends DagorObject {
-    public DagorFile(String name, ArrayList<DagorElement> elements) {
-        super(name, elements);
+
+    public DagorFile() {
+    }
+
+    @Override
+    public Collection <DagorElement> getElements() {
+        return null;
     }
 }

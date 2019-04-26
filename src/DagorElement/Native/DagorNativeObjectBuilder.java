@@ -23,6 +23,12 @@ public class DagorNativeObjectBuilder {
     }
 
 
+    public DagorObject CreateObjectFromFile(String fileName){
+        this.text = getText(fileName);
+        DagorObject dagorObject = parse(fileName, text);
+        return dagorObject;
+    }
+
     public DagorNativeObjectBuilder(){
     }
 
@@ -32,7 +38,7 @@ public class DagorNativeObjectBuilder {
         try {
             BufferedReader reader = new BufferedReader(new FileReader(file));
             while ((currentLine = reader.readLine()) != null) {
-                text.append(currentLine);
+                text.append(currentLine + "\n");
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -40,11 +46,18 @@ public class DagorNativeObjectBuilder {
         return text.toString();
     }
 
+    public DagorObject CreateObjectFromString(String name, String text){
+        this.text = text;
+        DagorObject dagorObject = parse(name, text);
+        return dagorObject;
+    }
+
+
     public DagorObject parse(String name, String text){
-        //this.name = fileName;
-        //this.text = getText(fileName);
+        this.name = name;
+        this.text = text;
         this.elements = new ArrayList<DagorElement>();
-        this.state = new TopLevelObject(this ,text);
+        this.state = new TopLevelObject(this ,text, "");
 
         while (!isFinished()) {
             state.parseChar(currentIndex);
@@ -62,6 +75,9 @@ public class DagorNativeObjectBuilder {
     }
 
     private boolean isFinished() {
+        if (text == null){
+            System.out.println("null");
+        }
         return currentIndex == text.length();
     }
 

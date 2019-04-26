@@ -12,8 +12,9 @@ public class TopLevelObject extends BuilderState {
      *
      * @param text the full file text
      */
-    public TopLevelObject(DagorNativeObjectBuilder builder, String text) {
+    public TopLevelObject(DagorNativeObjectBuilder builder, String text, String valuesBuffer) {
         super(builder, text);
+        this.valuesBuffer = valuesBuffer;
     }
 
     @Override
@@ -23,11 +24,12 @@ public class TopLevelObject extends BuilderState {
         switch (currentChar){
             case '{':
                 if (isEscaped(currentIndex)){
+                    //not the start of an object
                     valuesBuffer += currentChar;
                 }else{
+                    //start of object
+                    builder.changeState(new SubObject(builder, text, 1 , "" , valuesBuffer)); //TODO pass buffer?
                     valuesBuffer += currentChar;
-                    builder.changeState(new SubObject(builder, text, 1 , "" , valuesBuffer));
-                    endValue();
                 }
                 break;
             case '"':
@@ -69,7 +71,12 @@ public class TopLevelObject extends BuilderState {
     }
 
     private void endValue() {
-        builder.addElement(new DagorValueNative(valuesBuffer));
+        try {
+            DagorValueNative value = new DagorValueNative(valuesBuffer);
+            builder.addElement(value);
+        }catch (IllegalStateException ignored){
+
+        }
         valuesBuffer = "";
     }
 

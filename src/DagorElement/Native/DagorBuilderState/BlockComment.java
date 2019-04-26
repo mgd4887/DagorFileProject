@@ -19,7 +19,7 @@ public class BlockComment extends BuilderState {
         switch (currentChar){
             case('/'):
                 if (text.charAt(currentChar-1) == '*'){
-                    builder.changeState(new TopLevelObject(builder, text));
+                    builder.changeState(new TopLevelObject(builder, text, valuesBuffer));
                 }else {
                     valuesBuffer += currentChar;
                 }

@@ -84,7 +84,7 @@ public class SubObject extends BuilderState{
 
     private void endObject() {
         DagorNativeObjectBuilder selfBuilder = new DagorNativeObjectBuilder();
-        DagorObject self = selfBuilder.parse(name, subObjectBuffer);
+        DagorObject self = selfBuilder.CreateObjectFromString(name, subObjectBuffer);
         builder.addElement(self);
     }
 

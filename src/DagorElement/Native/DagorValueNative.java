@@ -13,7 +13,7 @@ public class DagorValueNative extends DagorValue {
     private ValueType valueType;
     private String value;
 
-    public DagorValueNative(String value) {
+    public DagorValueNative(String value) throws IllegalStateException {
         //create matcher
         String workValue = value.strip();
         String regex = "(.+):(p4|p3|p2|c|i|r|t|m|b)=(.+)";
@@ -21,10 +21,13 @@ public class DagorValueNative extends DagorValue {
         Matcher matcher = pattern.matcher(workValue);
 
         //set values
-        this.valueType = valueTypeStringToEnum(matcher.group(2));
-        this.value = matcher.group(3);
-        this.name = matcher.group(1);
-
+        try {
+            this.valueType = valueTypeStringToEnum(matcher.group(2));
+            this.value = matcher.group(3);
+            this.name = matcher.group(1);
+        }catch (Exception e){
+            throw new IllegalStateException();
+        }
     }
 
     @Override

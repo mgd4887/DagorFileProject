@@ -17,7 +17,7 @@ public class InlineComment extends BuilderState {
 
         switch (currentChar){
             case('\r'):
-                builder.changeState(new TopLevelObject(builder, text));
+                builder.changeState(new TopLevelObject(builder, text, valuesBuffer));
             default:
                 valuesBuffer += currentChar;
                 break;

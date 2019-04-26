@@ -24,10 +24,9 @@ public class InString extends BuilderState {
 
         switch (currentChar){
             case('"'):
-                if (isEscaped(currentIndex)){
-                    valuesBuffer += currentChar;
-                }else{
-                    builder.changeState(new TopLevelObject(builder, text));
+                valuesBuffer += currentChar;
+                if (!isEscaped(currentIndex)) {
+                    builder.changeState(new TopLevelObject(builder, text, valuesBuffer));
                 }
 
             default:
