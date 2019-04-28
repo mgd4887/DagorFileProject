@@ -30,6 +30,7 @@ public class SubObjectInString extends BuilderState {
                 if (isEscaped(currentIndex)){
                     subObjectBuffer += currentChar;
                 }else{
+                    subObjectBuffer += currentChar;
                     builder.changeState(new SubObject(builder, text, depth, subObjectBuffer, name));
                 }
 

@@ -61,6 +61,7 @@ public class DagorNativeObjectBuilder {
 
         while (!isFinished()) {
             state.parseChar(currentIndex);
+            System.out.println(text);
             currentIndex++;
         }
         resetBuilder();

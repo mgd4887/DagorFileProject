@@ -42,8 +42,8 @@ public class SubObject extends BuilderState{
                     subObjectBuffer += currentChar;
                     depth--;
                 }else if(depth == 1){
-                    subObjectBuffer += currentChar;
                     endObject();
+                    subObjectBuffer += currentChar;
                 }
                 break;
 
