@@ -8,8 +8,8 @@ This is a java program designed to read the block files of the [Dagor game engin
 Compatibility has been tested with:
 
 * War Thunder
-* Enlisted
-* Cuisine Royal*
+* Enlisted*
+* Cuisine Royal
 
 *Game in development, only tested with the latest alpha version I could get hold of (april 2018).
 
