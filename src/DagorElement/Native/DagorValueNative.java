@@ -13,6 +13,11 @@ public class DagorValueNative extends DagorValue {
     private ValueType valueType;
     private String value;
 
+    @Override
+    public String toString() {
+        return name + ":" + valueType.toNative() + "=" + value;
+    }
+
     public DagorValueNative(String value) throws IllegalStateException {
         //create matcher
         String workValue = value.strip();

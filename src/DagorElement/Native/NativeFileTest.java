@@ -10,7 +10,7 @@ public class NativeFileTest {
         if (args.length == 1){
             DagorNativeObjectBuilder builder = new DagorNativeObjectBuilder();
             DagorObject dagorObject = builder.CreateObjectFromFile(args[0]);
-            System.out.println("this exists to breakpoint");
+            System.out.println(dagorObject);
         }
     }
 }
