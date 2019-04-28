@@ -47,6 +47,7 @@ public class SubObject extends BuilderState{
                 }else if(depth == 1){
                     endObject();
                     subObjectBuffer += currentChar;
+                    builder.changeState(new TopLevelObject(builder, text, subObjectBuffer));
                 }
                 break;
 
