@@ -11,7 +11,7 @@ Compatibility has been tested with:
 * Enlisted
 * Cuisine Royal*
 
-*In development, only tested with the latest alpha version I could get hold of (april 2018).
+*Game in development, only tested with the latest alpha version I could get hold of (april 2018).
 
 and should work with any game that has the same format for their block files.
 
