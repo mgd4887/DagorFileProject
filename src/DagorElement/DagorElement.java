@@ -1,7 +1,6 @@
 package DagorElement;
 
-import java.io.BufferedWriter;
-import java.util.Collection;
+import java.util.ArrayList;
 
 public abstract class DagorElement {
     protected String name;
@@ -10,7 +9,7 @@ public abstract class DagorElement {
         return this.name;
     }
 
-    public abstract Collection<DagorElement> getElements();
+    public abstract ArrayList <DagorElement> getElements();
 
     public abstract String toNative(int depth);
 

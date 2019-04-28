@@ -4,7 +4,6 @@ import DagorElement.DagorElement;
 import DagorElement.DagorValue;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -25,7 +24,7 @@ public class DagorValueNative extends DagorValue {
     public DagorValueNative(String value) throws IllegalStateException {
         //create matcher
         String workValue = value.strip();
-        String regex = "(.+):(p4|p3|p2|c|i|r|t|m|b)=(.+)";
+        String regex = "(.+):(p4|p3|p2|c|i|r|t|m|b|ip2)=(.+)";
         Pattern pattern = Pattern.compile(regex);
         Matcher matcher = pattern.matcher(workValue);
 
@@ -40,7 +39,7 @@ public class DagorValueNative extends DagorValue {
     }
 
     @Override
-    public Collection <DagorElement> getElements() {
+    public ArrayList <DagorElement> getElements() {
         return null;
     }
 

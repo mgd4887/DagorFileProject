@@ -1,6 +1,6 @@
 package DagorElement;
 
-import java.util.Collection;
+import java.util.ArrayList;
 
 public abstract class DagorObject extends DagorElement {
 
@@ -9,7 +9,7 @@ public abstract class DagorObject extends DagorElement {
     }
 
     @Override
-    public abstract Collection <DagorElement> getElements();
+    public abstract ArrayList <DagorElement> getElements();
 
 
 }

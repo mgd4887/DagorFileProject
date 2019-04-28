@@ -4,7 +4,6 @@ import DagorElement.DagorElement;
 import DagorElement.DagorObject;
 
 import java.util.ArrayList;
-import java.util.Collection;
 
 public class DagorObjectNative extends DagorObject {
     private ArrayList<DagorElement> elements;
@@ -13,8 +12,12 @@ public class DagorObjectNative extends DagorObject {
     public String toNative(int depth) {
 
         StringBuilder indent = new StringBuilder();
+        String nameIndent = "";
         for (int i = 0; i < depth; i++){
             indent.append("  ");
+            if (i == depth-3){
+                nameIndent = indent.toString();
+            }
         }
 
         StringBuilder stringBuilder = new StringBuilder();
@@ -23,9 +26,9 @@ public class DagorObjectNative extends DagorObject {
             stringBuilder.append(element.toNative(depth + 1));
             stringBuilder.append("\n");
         }
-        return indent + name + "{\n" +
+        return "\n" + nameIndent + name + "{\n" +
                     stringBuilder.toString() +
-                    indent + "}";
+                    indent + "}\n";
 
     }
 
@@ -35,7 +38,7 @@ public class DagorObjectNative extends DagorObject {
     }
 
     @Override
-    public Collection <DagorElement> getElements() {
+    public ArrayList <DagorElement> getElements() {
         return elements;
     }
 

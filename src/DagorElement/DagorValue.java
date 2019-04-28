@@ -10,7 +10,7 @@ public abstract class DagorValue extends DagorElement {
     public abstract String getValue();
 
     protected enum ValueType {
-        REAL, INT, BOOL, P4, P3, P2, COLOR, M, STRING, ERROR;
+        REAL, INT, BOOL, P4, P3, P2, COLOR, M, STRING, ERROR, IP2;
 
         public String toNative() {
             switch (this){
@@ -32,6 +32,8 @@ public abstract class DagorValue extends DagorElement {
                     return "m";
                 case STRING:
                     return "t";
+                case IP2:
+                    return "ip2";
             }
             return "ERROR";
         }
@@ -61,6 +63,8 @@ public abstract class DagorValue extends DagorElement {
                 return ValueType.M;
             case "t":
                 return ValueType.STRING;
+            case "ip2":
+                return ValueType.IP2;
         }
         return ValueType.ERROR;
     }
