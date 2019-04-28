@@ -6,7 +6,7 @@ import java.util.regex.Pattern;
 public class RegexTest {
 
     public static void main(String[] args) {
-        String value = "  folder:t=\"content/hq_tex\"\n";
+        String value = "  mis_file:t=\"test\"";
         value = value.strip();
         String regex = "(.+):(p4|p3|p2|c|i|r|t|m|b)=(.+)";
         Pattern pattern = Pattern.compile(regex);

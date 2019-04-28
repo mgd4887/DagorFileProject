@@ -1,7 +1,10 @@
 package DagorElement.Native.DagorBuilderState;
 
+import DagorElement.DagorElement;
 import DagorElement.DagorObject;
 import DagorElement.Native.DagorNativeObjectBuilder;
+
+import java.util.Collection;
 
 public class SubObject extends BuilderState{
 

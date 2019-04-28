@@ -21,11 +21,11 @@ public class DagorValueNative extends DagorValue {
         Matcher matcher = pattern.matcher(workValue);
 
         //set values
-        try {
+        if(matcher.matches()){
             this.valueType = valueTypeStringToEnum(matcher.group(2));
             this.value = matcher.group(3);
             this.name = matcher.group(1);
-        }catch (Exception e){
+        }else{
             throw new IllegalStateException();
         }
     }
