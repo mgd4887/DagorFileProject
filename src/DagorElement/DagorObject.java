@@ -10,4 +10,6 @@ public abstract class DagorObject extends DagorElement {
 
     @Override
     public abstract Collection <DagorElement> getElements();
+
+
 }

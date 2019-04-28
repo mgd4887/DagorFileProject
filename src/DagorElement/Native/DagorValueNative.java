@@ -14,8 +14,12 @@ public class DagorValueNative extends DagorValue {
     private String value;
 
     @Override
-    public String toString() {
-        return name + ":" + valueType.toNative() + "=" + value;
+    public String toNative(int depth) {
+        StringBuilder indent = new StringBuilder();
+        for (int i = 0; i < depth; i++){
+            indent.append("  ");
+        }
+        return indent + name + ":" + valueType.toNative() + "=" + value;
     }
 
     public DagorValueNative(String value) throws IllegalStateException {

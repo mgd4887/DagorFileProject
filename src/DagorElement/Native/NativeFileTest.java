@@ -10,7 +10,7 @@ public class NativeFileTest {
         if (args.length == 1){
             DagorNativeObjectBuilder builder = new DagorNativeObjectBuilder();
             DagorObject dagorObject = builder.CreateObjectFromFile(args[0]);
-            System.out.println(dagorObject);
+            System.out.println(dagorObject.toNative(0));
         }
     }
 }

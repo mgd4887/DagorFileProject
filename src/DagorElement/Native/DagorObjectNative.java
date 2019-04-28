@@ -9,17 +9,23 @@ import java.util.Collection;
 public class DagorObjectNative extends DagorObject {
     private ArrayList<DagorElement> elements;
 
-    @Override
-    public String toString() {
+
+    public String toNative(int depth) {
+
+        StringBuilder indent = new StringBuilder();
+        for (int i = 0; i < depth; i++){
+            indent.append("  ");
+        }
+
         StringBuilder stringBuilder = new StringBuilder();
         for (DagorElement element: elements) {
-            stringBuilder.append("\t");
-            stringBuilder.append(element.toString());
+            //TODO add depth to toString?
+            stringBuilder.append(element.toNative(depth + 1));
             stringBuilder.append("\n");
         }
-        return name + "{\n" +
+        return indent + name + "{\n" +
                     stringBuilder.toString() +
-                    "}";
+                    indent + "}";
 
     }
 

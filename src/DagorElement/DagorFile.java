@@ -11,4 +11,9 @@ public class DagorFile extends DagorObject {
     public Collection <DagorElement> getElements() {
         return null;
     }
+
+    @Override
+    public String toNative(int depth) {
+        return null;
+    }
 }

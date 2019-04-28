@@ -12,6 +12,8 @@ public abstract class DagorElement {
 
     public abstract Collection<DagorElement> getElements();
 
+    public abstract String toNative(int depth);
+
     /*
     public abstract void compare(BufferedWriter writer);
     public abstract void equals();
