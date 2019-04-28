@@ -1,7 +1,7 @@
 # DagorFileProject
 
 ---
-###About
+##About
 
 This is a java program designed to read the block files of the [Dagor game engine](https://en.wikipedia.org/wiki/Gaijin_Entertainment#Dagor_Engine)
 
@@ -17,15 +17,15 @@ and should work with any game that has the same format for their block files.
 
 ---
 
-###How to use
+##How to use
 
-#####Creating dagor object from a file
+###Creating dagor object from a file
 ```java
 DagorNativeObjectBuilder builder = new DagorNativeObjectBuilder();
 DagorObject dagorObject = builder.CreateObjectFromFile("<fileName>");
 ```
 
-#####Creating dagor object from a string
+###Creating dagor object from a string
 ```java
 DagorNativeObjectBuilder builder = new DagorNativeObjectBuilder();
 DagorObject dagorObject = builder.CreateObjectFromString("<DataString>");
