@@ -1,6 +1,6 @@
 package DagorElement.Native.DagorBuilderState;
 
-import DagorElement.Native.DagorNativeObjectBuilder;
+import DagorElement.Native.DagorNativeBuilder;
 
 public class SubObjectBlockComment extends BuilderState {
     private String subObjectBuffer;
@@ -14,7 +14,7 @@ public class SubObjectBlockComment extends BuilderState {
      * @param depth
      * @param name
      */
-    public SubObjectBlockComment(DagorNativeObjectBuilder builder, String text, String subObjectBuffer, int depth, String name) {
+    public SubObjectBlockComment(DagorNativeBuilder builder, String text, String subObjectBuffer, int depth, String name) {
         super(builder, text);
         this.subObjectBuffer = subObjectBuffer;
         this.depth = depth;

@@ -1,12 +1,12 @@
 package DagorElement.Native.DagorBuilderState;
 
-import DagorElement.Native.DagorNativeObjectBuilder;
+import DagorElement.Native.DagorNativeBuilder;
 
 public class InlineComment extends BuilderState {
 
     private String valuesBuffer;
 
-    public InlineComment(DagorNativeObjectBuilder builder, String text, String valuesBuffer) {
+    public InlineComment(DagorNativeBuilder builder, String text, String valuesBuffer) {
         super(builder, text);
         this.valuesBuffer = valuesBuffer;
     }

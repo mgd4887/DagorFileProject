@@ -1,16 +1,16 @@
 package DagorElement.Native.DagorBuilderState;
 
-import DagorElement.Native.DagorNativeObjectBuilder;
+import DagorElement.Native.DagorNativeBuilder;
 
 public abstract class BuilderState {
     protected final String text;
-    protected final DagorNativeObjectBuilder builder;
+    protected final DagorNativeBuilder builder;
 
     /**
      * constructor for a state
      * @param text the full file text
      */
-    public BuilderState(DagorNativeObjectBuilder builder, String text){
+    public BuilderState(DagorNativeBuilder builder, String text){
         this.text = text;
         this.builder = builder;
     }

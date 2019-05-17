@@ -1,6 +1,6 @@
 package DagorElement.Native.DagorBuilderState;
 
-import DagorElement.Native.DagorNativeObjectBuilder;
+import DagorElement.Native.DagorNativeBuilder;
 import DagorElement.Native.DagorValueNative;
 
 public class TopLevelObject extends BuilderState {
@@ -12,7 +12,7 @@ public class TopLevelObject extends BuilderState {
      *
      * @param text the full file text
      */
-    public TopLevelObject(DagorNativeObjectBuilder builder, String text, String valuesBuffer) {
+    public TopLevelObject(DagorNativeBuilder builder, String text, String valuesBuffer) {
         super(builder, text);
         this.valuesBuffer = valuesBuffer;
     }

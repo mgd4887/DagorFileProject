@@ -1,33 +1,26 @@
 package DagorElement.Native;
 
 import DagorElement.DagorElement;
-import DagorElement.DagorObject;
+import DagorElement.DagorFile;
 
 import java.util.ArrayList;
 
-public class DagorObjectNative extends DagorObject {
+public class DagorFileNative extends DagorFile {
     private ArrayList<DagorElement> elements;
 
-
+    @Override
     public String toNative(int depth) {
-
-        StringBuilder indent = new StringBuilder();
-        for (int i = 0; i < depth; i++){
-            indent.append("  ");
-        }
 
         StringBuilder stringBuilder = new StringBuilder();
         for (DagorElement element: elements) {
             stringBuilder.append(element.toNative(depth + 1));
             stringBuilder.append("\n");
         }
-        return "\n"  + name + "{\n" +
-                    stringBuilder.toString() +
-                    indent + "}";
+        return stringBuilder.toString();
 
     }
 
-    protected DagorObjectNative(String name, ArrayList<DagorElement> elements) {
+    protected DagorFileNative(String name, ArrayList<DagorElement> elements) {
         this.name = name;
         this.elements = elements;
     }

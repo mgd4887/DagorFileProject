@@ -1,10 +1,7 @@
 package DagorElement.Native.DagorBuilderState;
 
-import DagorElement.DagorElement;
 import DagorElement.DagorObject;
-import DagorElement.Native.DagorNativeObjectBuilder;
-
-import java.util.Collection;
+import DagorElement.Native.DagorNativeBuilder;
 
 public class SubObject extends BuilderState{
 
@@ -17,7 +14,7 @@ public class SubObject extends BuilderState{
      *
      * @param text the full file text
      */
-    public SubObject(DagorNativeObjectBuilder builder, String text, int depth, String subObjectBuffer, String name) {
+    public SubObject(DagorNativeBuilder builder, String text, int depth, String subObjectBuffer, String name) {
         super(builder, text);
         this.depth = depth;
         this.subObjectBuffer = subObjectBuffer;
@@ -87,7 +84,7 @@ public class SubObject extends BuilderState{
     }
 
     private void endObject() {
-        DagorNativeObjectBuilder selfBuilder = new DagorNativeObjectBuilder();
+        DagorNativeBuilder selfBuilder = new DagorNativeBuilder();
         DagorObject self = selfBuilder.CreateObjectFromString(name, subObjectBuffer);
         builder.addElement(self);
     }

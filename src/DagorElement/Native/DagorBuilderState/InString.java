@@ -1,6 +1,6 @@
 package DagorElement.Native.DagorBuilderState;
 
-import DagorElement.Native.DagorNativeObjectBuilder;
+import DagorElement.Native.DagorNativeBuilder;
 
 public class InString extends BuilderState {
 
@@ -13,7 +13,7 @@ public class InString extends BuilderState {
      * @param text the full file text
      * @param valuesBuffer
      */
-    public InString(DagorNativeObjectBuilder builder, String text, String valuesBuffer) {
+    public InString(DagorNativeBuilder builder, String text, String valuesBuffer) {
         super(builder, text);
         this.valuesBuffer = valuesBuffer;
     }
