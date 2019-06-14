@@ -1,8 +1,9 @@
 package DagorElement.Native.DagorBuilderState;
 
+import DagorElement.DagorBuilderState;
 import DagorElement.Native.DagorNativeBuilder;
 
-public abstract class BuilderState {
+public abstract class BuilderState implements DagorBuilderState {
     protected final String text;
     protected final DagorNativeBuilder builder;
 

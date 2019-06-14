@@ -7,10 +7,10 @@ import DagorElement.*;
 import java.io.*;
 import java.util.ArrayList;
 
-public class DagorNativeBuilder {
+public class DagorNativeBuilder implements DagorBuilder {
 
     private String text;
-    private BuilderState state;
+    private DagorBuilderState state;
     private int currentIndex = 0;
     private ArrayList<DagorElement> elements;
 
@@ -50,7 +50,7 @@ public class DagorNativeBuilder {
      * changes the state of the state machine
      * @param newState
      */
-    public void changeState(BuilderState newState){
+    public void changeState(DagorBuilderState newState){
         this.state = newState;
     }
 
