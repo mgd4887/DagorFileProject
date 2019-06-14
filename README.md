@@ -21,12 +21,10 @@ and should work with any game that has the same format for their block files.
 
 ###Creating dagor object from a blockFile
 ```java
-DagorNativeObjectBuilder builder = new DagorNativeObjectBuilder();
-DagorObject dagorObject = builder.CreateObjectFromFile("<fileName>");
+DagorFile dagorfile = new DagorFileNative("<fileName>");
 ```
 
 ###Creating dagor object from a string
 ```java
-DagorNativeObjectBuilder builder = new DagorNativeObjectBuilder();
-DagorObject dagorObject = builder.CreateObjectFromString("<DataString>");
+DagorObject dagorObject = new DagorObjectNative("<DataString>");
 ```
