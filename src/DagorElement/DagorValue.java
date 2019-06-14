@@ -1,15 +1,16 @@
 package DagorElement;
 
-import DagorElement.DagorElement;
-
-import java.util.ArrayList;
-import java.util.Collection;
-
-public abstract class DagorValue extends DagorElement {
+public abstract class DagorValue implements DagorElement {
 
     public abstract String getValue();
 
-    protected enum ValueType {
+    public abstract ValueType getType();
+
+    public abstract void setType(ValueType newType);
+
+    public abstract void setValue(String newValue);
+
+    public enum ValueType {
         REAL, INT, BOOL, P4, P3, P2, COLOR, M, STRING, ERROR, IP2;
 
         public String toNative() {

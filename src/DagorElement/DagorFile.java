@@ -1,9 +1,5 @@
 package DagorElement;
 
-import java.util.ArrayList;
+public interface DagorFile extends DagorObject {
 
-public abstract class DagorFile extends DagorObject {
-
-    public DagorFile() {
-    }
 }

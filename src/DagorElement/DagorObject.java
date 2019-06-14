@@ -2,14 +2,10 @@ package DagorElement;
 
 import java.util.ArrayList;
 
-public abstract class DagorObject extends DagorElement {
+public interface DagorObject extends DagorElement {
 
 
-    protected DagorObject() {
-    }
+    void addElement(DagorElement element);
 
-    @Override
-    public abstract ArrayList <DagorElement> getElements();
-
-
+    void removeElement(DagorElement element);
 }

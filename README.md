@@ -19,7 +19,7 @@ and should work with any game that has the same format for their block files.
 
 ##How to use
 
-###Creating dagor object from a file
+###Creating dagor object from a blockFile
 ```java
 DagorNativeObjectBuilder builder = new DagorNativeObjectBuilder();
 DagorObject dagorObject = builder.CreateObjectFromFile("<fileName>");

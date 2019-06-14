@@ -5,8 +5,9 @@ import DagorElement.DagorFile;
 
 import java.util.ArrayList;
 
-public class DagorFileNative extends DagorFile {
+public class DagorFileNative implements DagorFile {
     private ArrayList<DagorElement> elements;
+    private String name;
 
     @Override
     public String toNative(int depth) {
@@ -20,9 +21,20 @@ public class DagorFileNative extends DagorFile {
 
     }
 
-    protected DagorFileNative(String name, ArrayList<DagorElement> elements) {
+    @Override
+    public void setName(String name) {
         this.name = name;
-        this.elements = elements;
+    }
+
+    public DagorFileNative(String name) {
+        this.name = name;
+        DagorNativeBuilder builder = new DagorNativeBuilder();
+        elements = builder.CreateObjectFromFile(name);
+    }
+
+    @Override
+    public String getName() {
+        return name;
     }
 
     @Override
@@ -30,4 +42,18 @@ public class DagorFileNative extends DagorFile {
         return elements;
     }
 
+    @Override
+    public void addElement(DagorElement element) {
+        elements.add(element);
+    }
+
+    @Override
+    public void removeElement(DagorElement element) {
+        elements.remove(element);
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
 }

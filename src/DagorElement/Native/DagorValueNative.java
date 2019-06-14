@@ -11,6 +11,7 @@ public class DagorValueNative extends DagorValue {
 
     private ValueType valueType;
     private String value;
+    private String name;
 
     @Override
     public String toNative(int depth) {
@@ -19,6 +20,11 @@ public class DagorValueNative extends DagorValue {
             indent.append("  ");
         }
         return indent + name + ":" + valueType.toNative() + "=" + value;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
     }
 
     public DagorValueNative(String value) throws IllegalStateException {
@@ -39,6 +45,11 @@ public class DagorValueNative extends DagorValue {
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public ArrayList <DagorElement> getElements() {
         return null;
     }
@@ -46,5 +57,25 @@ public class DagorValueNative extends DagorValue {
     @Override
     public String getValue() {
         return value;
+    }
+
+    @Override
+    public String toString() {
+        return name + ":" + valueType + ":" + value ;
+    }
+
+    @Override
+    public ValueType getType() {
+        return valueType;
+    }
+
+    @Override
+    public void setType(ValueType newType) {
+        this.valueType = newType;
+    }
+
+    @Override
+    public void setValue(String newValue) {
+        this.value = newValue;
     }
 }

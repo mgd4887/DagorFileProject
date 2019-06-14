@@ -2,6 +2,7 @@ package DagorElement.Native.DagorBuilderState;
 
 import DagorElement.DagorObject;
 import DagorElement.Native.DagorNativeBuilder;
+import DagorElement.Native.DagorObjectNative;
 
 public class SubObject extends BuilderState{
 
@@ -84,8 +85,7 @@ public class SubObject extends BuilderState{
     }
 
     private void endObject() {
-        DagorNativeBuilder selfBuilder = new DagorNativeBuilder();
-        DagorObject self = selfBuilder.CreateObjectFromString(name, subObjectBuffer);
+        DagorObject self = new DagorObjectNative(name, subObjectBuffer);
         builder.addElement(self);
     }
 

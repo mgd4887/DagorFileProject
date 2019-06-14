@@ -2,16 +2,15 @@ package DagorElement;
 
 import java.util.ArrayList;
 
-public abstract class DagorElement {
-    protected String name;
+public interface DagorElement {
 
-    public String getName(){
-        return this.name;
-    }
+    String getName();
 
-    public abstract ArrayList <DagorElement> getElements();
+    ArrayList <DagorElement> getElements();
 
-    public abstract String toNative(int depth);
+    String toNative(int depth);
+
+    void setName(String name);
 
     /*
     public abstract void compare(BufferedWriter writer);

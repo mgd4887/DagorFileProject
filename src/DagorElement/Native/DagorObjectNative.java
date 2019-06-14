@@ -5,9 +5,16 @@ import DagorElement.DagorObject;
 
 import java.util.ArrayList;
 
-public class DagorObjectNative extends DagorObject {
+public class DagorObjectNative implements DagorObject {
     private ArrayList<DagorElement> elements;
+    private String name;
 
+
+    public DagorObjectNative(String name, String text) {
+        this.name = name;
+        DagorNativeBuilder builder = new DagorNativeBuilder();
+        elements = builder.CreateObjectFromString(text);
+    }
 
     public String toNative(int depth) {
 
@@ -27,14 +34,39 @@ public class DagorObjectNative extends DagorObject {
 
     }
 
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
     protected DagorObjectNative(String name, ArrayList<DagorElement> elements) {
         this.name = name;
         this.elements = elements;
     }
 
     @Override
+    public String getName() {
+        return name;
+    }
+
+    @Override
     public ArrayList <DagorElement> getElements() {
         return elements;
+    }
+
+    @Override
+    public void addElement(DagorElement element) {
+        elements.add(element);
+    }
+
+    @Override
+    public void removeElement(DagorElement element) {
+        elements.remove(element);
     }
 
 }

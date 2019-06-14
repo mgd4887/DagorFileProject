@@ -25,26 +25,25 @@ public class DagorNativeBuilder {
     }
 
     /**
-     * creates a DagorFileNative from the given file
+     * creates a array list of dagor elements from the given file
      * @param fileName the name of the file to create a dagorFile from
      * @return a DagorFileNative described in the file.
      */
-    public DagorFileNative CreateObjectFromFile(String fileName){
+    public ArrayList<DagorElement> CreateObjectFromFile(String fileName){
         String text = getText(fileName);
         ArrayList<DagorElement> elements = parse(text);
-        return new DagorFileNative(fileName, elements);
+        return elements;
     }
 
     /**
-     * creates an DagorNativeObject from the given text string
-     * @param name the name of the object
-     * @param text the name of the
+     * creates an array list of dagor elements from the given text
+     * @param text the text of the object
      * @return a nativeDagorObject described in the text
      */
-    public DagorObjectNative CreateObjectFromString(String name, String text){
+    public ArrayList<DagorElement> CreateObjectFromString(String text){
         //this.text = text;
         ArrayList<DagorElement> elements = parse(text);
-        return new DagorObjectNative(name, elements);
+        return elements;
     }
 
     /**
